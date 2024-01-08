@@ -1,0 +1,9 @@
+{
+    "language": "French",
+    "screens": {
+        "WelcomeScreen": {
+            "login": "Identifiant",
+            "password": "Mot de passe"
+        }
+    }
+}

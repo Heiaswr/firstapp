@@ -1,0 +1,9 @@
+{
+    "language": "English",
+    "screens": {
+        "WelcomeScreen": {
+            "login": "Login",
+            "password": "Password"
+        }
+    }
+}
