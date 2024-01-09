@@ -1,0 +1,38 @@
+[
+{
+	"title": "Les courses sont faites",
+	"content": "On voit que je commence tout doucement à manquer d'inspiration pour créer des articles (après 2, c'est magnifique). Du coup, sachez que j'ai pris pas mal de viande pour la semaine !",
+	"size": "small",
+	"important": true
+},
+{
+	"title": "Sacha, le GOAT",
+	"content": "Le terme G.O.A.T a souvent été utilisé, et souvent à tort. Sacha est le G.O.A.T. Sans lui, celle application n'existerait pas. Pour ça, je souhaitais lui adresser ce petit message.",
+	"size": "medium",
+	"important": false
+},
+{
+	"title": "Bienvenue sur l'application !",
+	"content": "Bienvenue à vous sur la toute nouvelle application de tournoi. C'est avec un grand honneur que nous vous proposons cette toute nouvelle application pour pouvoir suivre en temps réel l'avancée du tournoi. Vous retrouverez un calendrier, le classement en temps réel (et la possibilité de consulter le classement des anciens tournois) et des news comme celle-ci. N'hésitez pas à nous faire un retour afin de rendre cette application encore plus belle !",
+	"size": "large",
+	"important": true
+},
+{
+	"title": "Les courses sont faites",
+	"content": "On voit que je commence tout doucement à manquer d'inspiration pour créer des articles (après 2, c'est magnifique). Du coup, sachez que j'ai pris pas mal de viande pour la semaine !",
+	"size": "large",
+	"important": false
+},
+{
+	"title": "Sacha, le GOAT",
+	"content": "Le terme G.O.A.T a souvent été utilisé, et souvent à tort. Sacha est le G.O.A.T. Sans lui, celle application n'existerait pas. Pour ça, je souhaitais lui adresser ce petit message.",
+	"size": "small",
+	"important": false
+},
+{
+	"title": "Bienvenue sur l'application !",
+	"content": "Bienvenue à vous sur la toute nouvelle application de tournoi. C'est avec un grand honneur que nous vous proposons cette toute nouvelle application pour pouvoir suivre en temps réel l'avancée du tournoi. Vous retrouverez un calendrier, le classement en temps réel (et la possibilité de consulter le classement des anciens tournois) et des news comme celle-ci. N'hésitez pas à nous faire un retour afin de rendre cette application encore plus belle !",
+	"size": "large",
+	"important": true
+}
+]

@@ -1,8 +1,8 @@
 type News = {
   title: string,
   content: string,
-  //size?: NewsSize,
-  //important: boolean,
+  size?: string,
+  important: boolean,
   
 }
 
