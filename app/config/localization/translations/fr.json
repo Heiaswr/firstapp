@@ -1,5 +1,8 @@
 {
-    "language": "French",
+    "language": {
+        "en": "Anglais",
+        "fr": "Français"
+    },
     "screens": {
         "WelcomeScreen": {
             "login": "Identifiant",

@@ -18,14 +18,6 @@ import RankingScreen from "./RankingScreen";
 function MesTests(props) {
   const { t } = useTranslation();
 
-  //const [selected, setSelected] = React.useState("");
-  const [selectedLanguage, setSelectedLanguage] = useState("");
-  const [open, setOpen] = useState(false);
-  const [value, setValue] = useState(null);
-  const [lang, setLang] = useState([
-    { key: "1", value: "English", short: "en" },
-    { key: "2", value: "Français", short: "fr" },
-  ]);
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.text}>Bienvenue</Text>
@@ -35,6 +27,7 @@ function MesTests(props) {
         placeholder={t("screens.WelcomeScreen.login")}
       />
       <TextInput
+        secureTextEntry={true}
         id="password"
         editable={true}
         placeholder={t("screens.WelcomeScreen.password")}
@@ -48,28 +41,15 @@ function MesTests(props) {
         maxHeight={(lang.length + 1) * 25}
       /> */}
 
-      {
-        <Picker
-          enabled={true}
-          style={styles.picker}
-          selectedValue={selectedLanguage}
-          onValueChange={(itemValue, itemIndex) =>
-            setSelectedLanguage(itemValue)
-          }
-        >
-          <Picker.Item label="EN" value="English" />
-          <Picker.Item label="FR" value="French" />
-        </Picker>
-      }
+      <Picker
+        style={styles.picker}
+        selectedValue={i18n.language}
+        onValueChange={(itemValue, itemIndex) => i18n.changeLanguage(itemValue)}
+      >
+        <Picker.Item label={t("language.en")} value="en" />
+        <Picker.Item label={t("language.fr")} value="fr" />
+      </Picker>
 
-      <View>
-        <TouchableOpacity onPress={() => i18n.changeLanguage("en")}>
-          <Text>English</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => i18n.changeLanguage("fr")}>
-          <Text>French</Text>
-        </TouchableOpacity>
-      </View>
       {/* <Button style={styles.button} title="Texte" /> */}
     </SafeAreaView>
   );
@@ -107,13 +87,17 @@ const styles = StyleSheet.create({
   },
   container: {
     backgroundColor: colors.primary,
-    flex: 1,
+    flex: 1 /* 
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "center", */,
   },
   nav: {
     flex: 1,
     height: 200,
+  },
+  picker: {
+    height: "fit-content",
+    width: "fit-content",
   },
   separator: {},
   text: {

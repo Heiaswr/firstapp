@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "./HomeScreen";
 import RankingScreen from "./RankingScreen";
 import CalendarScreen from "./CalendarScreen";
+import MesTests from "./MesTests";
 
 function WelcomeScreen(props) {
   const Tab = createBottomTabNavigator();
@@ -13,7 +14,7 @@ function WelcomeScreen(props) {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Ranking" component={RankingScreen} />
+        <Tab.Screen name="Ranking" component={MesTests} />
         <Tab.Screen name="Calendar" component={CalendarScreen} />
       </Tab.Navigator>
     </NavigationContainer>
