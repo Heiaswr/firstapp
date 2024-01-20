@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import useDebug from "./useDebug";
 
 const useAPI = <T>(baseUrl: string, route: string) => {
     /*
@@ -10,6 +11,15 @@ const useAPI = <T>(baseUrl: string, route: string) => {
     const [data, setData] = useState<T>();
     const [isLoading, setIsLoading] = useState(true);
     const [isRefreshing, setIsRefreshing] = useState(true);
+    let headers = new Headers();
+
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'application/json');
+
+    headers.append('Access-Control-Allow-Origin', 'http://localhost:19006');
+    headers.append('Access-Control-Allow-Credentials', 'true');
+
+    headers.append('GET', 'POST');
   
     const startFetch = useCallback(() => {
       setIsRefreshing(true);
@@ -32,6 +42,7 @@ const useAPI = <T>(baseUrl: string, route: string) => {
   
         // set state with the result
         setData(json);
+        useDebug(data);
         stopFetch();
       };
   
