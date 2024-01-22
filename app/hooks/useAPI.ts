@@ -11,15 +11,6 @@ const useAPI = <T>(baseUrl: string, route: string) => {
     const [data, setData] = useState<T>();
     const [isLoading, setIsLoading] = useState(true);
     const [isRefreshing, setIsRefreshing] = useState(true);
-    let headers = new Headers();
-
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
-
-    headers.append('Access-Control-Allow-Origin', 'http://localhost:19006');
-    headers.append('Access-Control-Allow-Credentials', 'true');
-
-    headers.append('GET', 'POST');
   
     const startFetch = useCallback(() => {
       setIsRefreshing(true);
@@ -36,7 +27,14 @@ const useAPI = <T>(baseUrl: string, route: string) => {
       // declare the async data fetching function
       const fetchData = async () => {
         // get the data from the api
-        const data = await fetch(baseUrl + route);
+        const data = await fetch(baseUrl + route, {
+          method: 'GET',
+          mode: 'cors',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-RapidAPI-Key': 'your-api-key'
+          }
+        });
         // convert the data to json
         const json = await data.json();
   
