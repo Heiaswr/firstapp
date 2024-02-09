@@ -7,6 +7,8 @@ import HomeScreen from "./HomeScreen";
 import RankingScreen from "./RankingScreen";
 import CalendarScreen from "./CalendarScreen";
 import MesTests from "./MesTests";
+import NewsReading from "./NewsReading";
+import { Screen } from "react-native-screens";
 
 function WelcomeScreen(props) {
   const Tab = createBottomTabNavigator();
@@ -17,6 +19,9 @@ function WelcomeScreen(props) {
         <Tab.Screen name="Ranking" component={MesTests} />
         <Tab.Screen name="Calendar" component={CalendarScreen} />
       </Tab.Navigator>
+      <Navigator>
+        <Screen name="NewsReading" component={NewsReading} />
+      </Navigator>
     </NavigationContainer>
   );
 }

@@ -1,35 +1,41 @@
 [
     {
+      "id": 1,
       "content": "On voit que je commence tout doucement à manquer d'inspiration pour créer des articles (après 2, c'est magnifique). Du coup, sachez que j'ai pris pas mal de viande pour la semaine !",
       "important": true,
       "size": "small",
       "title": "Les courses sont faites"
     },
     {
+      "id": 2,
       "content": "Le terme G.O.A.T a souvent été utilisé, et souvent à tort. Sacha est le G.O.A.T. Sans lui, celle application n'existerait pas. Pour ça, je souhaitais lui adresser ce petit message.",
       "important": false,
       "size": "medium",
       "title": "Sacha, le GOAT"
     },
     {
+      "id": 3,
       "content": "Bienvenue à vous sur la toute nouvelle application de tournoi. C'est avec un grand honneur que nous vous proposons cette toute nouvelle application pour pouvoir suivre en temps réel l'avancée du tournoi. Vous retrouverez un calendrier, le classement en temps réel (et la possibilité de consulter le classement des anciens tournois) et des news comme celle-ci. N'hésitez pas à nous faire un retour afin de rendre cette application encore plus belle !",
       "important": true,
       "size": "large",
       "title": "Bienvenue sur l'application !"
     },
     {
+      "id": 4,
       "content": "On voit que je commence tout doucement à manquer d'inspiration pour créer des articles (après 2, c'est magnifique). Du coup, sachez que j'ai pris pas mal de viande pour la semaine !",
       "important": false,
       "size": "large",
       "title": "Les courses sont faites"
     },
     {
+      "id": 5,
       "content": "Le terme G.O.A.T a souvent été utilisé, et souvent à tort. Sacha est le G.O.A.T. Sans lui, celle application n'existerait pas. Pour ça, je souhaitais lui adresser ce petit message.",
       "important": false,
       "size": "small",
       "title": "Sacha, le GOAT"
     },
     {
+      "id": 6,
       "content": "Bienvenue à vous sur la toute nouvelle application de tournoi. C'est avec un grand honneur que nous vous proposons cette toute nouvelle application pour pouvoir suivre en temps réel l'avancée du tournoi. Vous retrouverez un calendrier, le classement en temps réel (et la possibilité de consulter le classement des anciens tournois) et des news comme celle-ci. N'hésitez pas à nous faire un retour afin de rendre cette application encore plus belle !",
       "important": true,
       "size": "large",
